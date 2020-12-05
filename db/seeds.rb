@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+puts "--- starting seeding --- "
+
+10.times do |file|
+  title = Faker::Ancient.god
+  content = Faker::Quote.famous_last_words
+  new = Article.new(title: title, content: content)
+  new.save!
+end
+
+puts "--- Seed end ----"
