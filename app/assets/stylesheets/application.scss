@@ -13,10 +13,33 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap/scss/bootstrap";
+// @import "font-awesome";
 
+.navbar {
+  background-color: #F8F8F8;
+  color: #333333;
+}
+.nav-font {
+  color: #929292;
+}
 
- body {
-   margin-left: auto;
-   margin-right: auto;
-   width: 50px;
- }
+h1 {
+  font-size: 16px;
+  text-align: center;
+  color: #929292;
+  font-weight: bold;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.action-show {
+  display: flex;
+  justify-content: space-between;
+}
+.center {
+  text-align: center;
+}

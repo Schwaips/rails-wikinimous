@@ -1,0 +1,27 @@
+<h1> Welcome To Wiki</h1>
+<br>
+<%= link_to new_article_path do %>
+<span><i class="fas fa-external-link-alt"></i> Create a new article </i></span>
+<% end %>
+<br>
+<br>
+
+<table class="table">
+<thead class="thead-light">
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+  </tr>
+</thead>
+    <% @articles.each do |article| %>
+    <tr>
+      <td> <%= link_to  "#{article.title}", article_path(article) %></td>
+      <td> <%= article.content %></td>
+
+     </tr>
+    <% end %>
+</table>
+<br>
+<%= link_to new_article_path do %>
+<span><i class="fas fa-external-link-alt"></i> Create a new article </i></span>
+<% end %>

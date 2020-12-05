@@ -1,0 +1,22 @@
+<div class="center">
+
+<h1>Edit the article</h1>
+<br>
+
+  <%= form_for(@article) do |t| %>
+    <%= t.label :title %>
+    <%= t.text_field :title %>
+    <br>
+    <br>
+    <%= t.label :content %>
+    <%= t.text_field :content %>
+    <br>
+    <br>
+    <%= t.submit class: "btn btn-primary" %>
+<% end %>
+</div>
+
+<br>
+ <%= link_to articles_path do %>
+  <span><i class="fas fa-undo"> Back to the list </i></span>
+  <% end %>

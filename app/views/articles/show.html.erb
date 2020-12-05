@@ -1,0 +1,20 @@
+
+
+<h1>Article details</h1>
+
+<p>Title : <%= @article.title %></p>
+<br>
+<span>Quote from the god : <%= @article.content %></span>
+
+<br>
+<br>
+
+<div class="action-show">
+  <%= link_to articles_path do %>
+  <span><i class="fas fa-undo"> Back to the list </i></span>
+  <% end %>
+ <%= link_to edit_article_path do %>
+  <span><i class="far fa-edit"> Edit article </i></span>
+  <% end %>
+
+</div>
